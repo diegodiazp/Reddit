@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subredditCell" rowHeight="115" id="UKa-Xm-fa0" customClass="subredditCell">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UKa-Xm-fa0" id="Onb-yG-RlA">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-YW-Fyq">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="hOY-FV-x0g"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMX-ls-6g9">
+                        <rect key="frame" x="116" y="8" width="307" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Yr5-It-gbS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oga-hW-zVB">
+                        <rect key="frame" x="116" y="37" width="307" height="40"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de suscriptores" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmk-BP-mK1">
+                        <rect key="frame" x="116" y="85" width="307" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tMX-ls-6g9" firstAttribute="trailing" secondItem="oga-hW-zVB" secondAttribute="trailing" id="7gl-rt-nIT"/>
+                    <constraint firstItem="tMX-ls-6g9" firstAttribute="leading" secondItem="Ytm-YW-Fyq" secondAttribute="trailing" constant="8" symbolic="YES" id="9Zf-RI-pKH"/>
+                    <constraint firstItem="oga-hW-zVB" firstAttribute="top" secondItem="tMX-ls-6g9" secondAttribute="bottom" constant="8" symbolic="YES" id="9iv-50-yke"/>
+                    <constraint firstItem="oga-hW-zVB" firstAttribute="trailing" secondItem="hmk-BP-mK1" secondAttribute="trailing" id="Nd1-mq-tzB"/>
+                    <constraint firstItem="hmk-BP-mK1" firstAttribute="top" secondItem="oga-hW-zVB" secondAttribute="bottom" constant="8" symbolic="YES" id="WCd-nZ-xtm"/>
+                    <constraint firstItem="oga-hW-zVB" firstAttribute="leading" secondItem="hmk-BP-mK1" secondAttribute="leading" id="eUx-Fc-ZDN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ytm-YW-Fyq" secondAttribute="bottom" constant="-2" id="eoI-5l-aM4"/>
+                    <constraint firstItem="Ytm-YW-Fyq" firstAttribute="top" secondItem="tMX-ls-6g9" secondAttribute="top" id="ng1-VY-nWP"/>
+                    <constraint firstItem="oga-hW-zVB" firstAttribute="centerY" secondItem="Onb-yG-RlA" secondAttribute="centerY" id="ooI-Ou-OVp"/>
+                    <constraint firstItem="tMX-ls-6g9" firstAttribute="leading" secondItem="oga-hW-zVB" secondAttribute="leading" id="r4u-it-mei"/>
+                    <constraint firstItem="Ytm-YW-Fyq" firstAttribute="leading" secondItem="Onb-yG-RlA" secondAttribute="leadingMargin" id="s1G-eS-6hp"/>
+                    <constraint firstItem="tMX-ls-6g9" firstAttribute="trailing" secondItem="Onb-yG-RlA" secondAttribute="trailingMargin" id="s5S-3c-e9f"/>
+                    <constraint firstItem="Ytm-YW-Fyq" firstAttribute="top" secondItem="Onb-yG-RlA" secondAttribute="topMargin" id="yiP-c3-jkb"/>
+                    <constraint firstItem="hmk-BP-mK1" firstAttribute="bottom" secondItem="Onb-yG-RlA" secondAttribute="bottomMargin" id="zln-1j-zQF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLbl" destination="oga-hW-zVB" id="lrB-tT-8dN"/>
+                <outlet property="iconImg" destination="Ytm-YW-Fyq" id="mAK-4h-KDe"/>
+                <outlet property="suscriptors" destination="hmk-BP-mK1" id="yjR-d2-uyd"/>
+                <outlet property="title" destination="tMX-ls-6g9" id="Mtk-RY-d7B"/>
+            </connections>
+            <point key="canvasLocation" x="-21.5" y="-82.5"/>
+        </tableViewCell>
+    </objects>
+</document>
